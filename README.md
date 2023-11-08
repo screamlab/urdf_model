@@ -9,6 +9,7 @@
 # 需先具備工具
 * https://github.com/syuntoku14/fusion2urdf (將fusion轉成urdf)
 * https://github.com/doctorsrn/xacro2urdf (將xacro轉成urdf)
+* https://github.com/Unity-Technologies/URDF-Importer (將urdf匯入unity)
 * fusion360
 * https://www.youtube.com/watch?v=080UAkOeeUM&t=479s (完整製作教學影片)
 # urdf車體製作

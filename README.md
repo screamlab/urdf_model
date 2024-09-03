@@ -25,4 +25,5 @@
 * 零件下面不能有零件
 * join時下面的數字絕對都要是0
 * 若想將零件join時改變join位置，可先改變零件body的角度再去join(改變body不會造成影響)
-* 盡可能的將零件越少越好(可將其他零件的body底下的東西拖拉到其他零件的body做組合，藉此減少零件量)
+* 盡可能的將零件越少越好，可將其他零件的body底下的東西拖拉到其他零件的body做組合，藉此減少零件量，但不要過度合併，不然會造成轉動有問題(如下圖)
+![過度合併](https://github.com/alianlbj23/urdf_model/blob/main/pic/%E9%81%8E%E5%BA%A6%E5%90%88%E4%BD%B5.png?raw=true)

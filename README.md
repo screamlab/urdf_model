@@ -10,7 +10,8 @@
 ![上銀機械手臂](https://github.com/alianlbj23/urdf_model/blob/main/pic/hiwin%E6%A9%9F%E6%A2%B0%E6%89%8B%E8%87%82.png?raw=true)
 # 需先具備工具
 * https://github.com/syuntoku14/fusion2urdf (將fusion轉成urdf)
-* https://github.com/doctorsrn/xacro2urdf (將xacro轉成urdf) (無法轉換太過複雜的物體，不然有高機率會失敗)
+* https://github.com/doctorsrn/xacro2urdf (將xacro轉成urdf) (無法轉換太過複雜的物體，不然有高機率會失敗)(這個可以用下面的工具取代)
+* https://github.com/screamlab/fusion_xacro2urdf2unity (將 xacro 直接轉換成 urdf，這個不用搬資料夾，會更方便)
 * https://github.com/Unity-Technologies/URDF-Importer (將urdf匯入unity) 
 * fusion360
 * https://www.youtube.com/watch?v=080UAkOeeUM&t=479s (完整製作教學影片)

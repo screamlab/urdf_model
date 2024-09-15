@@ -1,0 +1,167 @@
+<?xml version="1.0" ?>
+<robot name="fourWheelCar" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find fourWheelCar_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find fourWheelCar_description)/urdf/fourWheelCar.trans" />
+<xacro:include filename="$(find fourWheelCar_description)/urdf/fourWheelCar.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.031141049832366353 9.242377183248719e-06 0.050011490590469526" rpy="0 0 0"/>
+    <mass value="11.13582814957309"/>
+    <inertia ixx="0.069638" iyy="0.130358" izz="0.141493" ixy="1.4e-05" iyz="-4e-06" ixz="-0.009844"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fourWheelCar_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fourWheelCar_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_v1_1">
+  <inertial>
+    <origin xyz="-1.3877787807814457e-17 -0.015000000000000041 0.0" rpy="0 0 0"/>
+    <mass value="1.1837521118726337"/>
+    <inertia ixx="0.000562" iyy="0.000947" izz="0.000562" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.1025 0.1175 -0.0225" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fourWheelCar_description/meshes/wheel_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.1025 0.1175 -0.0225" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fourWheelCar_description/meshes/wheel_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_v1__1__1">
+  <inertial>
+    <origin xyz="-1.3877787807814457e-17 0.014999999999999958 0.0" rpy="0 0 0"/>
+    <mass value="1.1837521118726337"/>
+    <inertia ixx="0.000562" iyy="0.000947" izz="0.000562" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.1025 -0.1175 -0.0225" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fourWheelCar_description/meshes/wheel_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.1025 -0.1175 -0.0225" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fourWheelCar_description/meshes/wheel_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_v1__2__1">
+  <inertial>
+    <origin xyz="-1.3877787807814457e-17 -0.015000000000000041 3.122502256758253e-17" rpy="0 0 0"/>
+    <mass value="1.1837521118726337"/>
+    <inertia ixx="0.000562" iyy="0.000947" izz="0.000562" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0975 0.1175 -0.0225" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fourWheelCar_description/meshes/wheel_v1__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0975 0.1175 -0.0225" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fourWheelCar_description/meshes/wheel_v1__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_v1__3__1">
+  <inertial>
+    <origin xyz="-1.3877787807814457e-17 0.014999999999999958 3.469446951953614e-17" rpy="0 0 0"/>
+    <mass value="1.1837521118726337"/>
+    <inertia ixx="0.000562" iyy="0.000947" izz="0.000562" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0975 -0.1175 -0.0225" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fourWheelCar_description/meshes/wheel_v1__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0975 -0.1175 -0.0225" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fourWheelCar_description/meshes/wheel_v1__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lidar_v1_1">
+  <inertial>
+    <origin xyz="-1.0058283789193823e-09 0.0 0.009858499938735416" rpy="0 0 0"/>
+    <mass value="0.5286905929941373"/>
+    <inertia ixx="0.000159" iyy="0.000159" izz="0.000284" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0675 -0.0 -0.165" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fourWheelCar_description/meshes/lidar_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0675 -0.0 -0.165" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fourWheelCar_description/meshes/lidar_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute 1" type="continuous">
+  <origin xyz="0.1025 -0.1175 0.0225" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_v1_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 2" type="continuous">
+  <origin xyz="0.1025 0.1175 0.0225" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_v1__1__1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 3" type="continuous">
+  <origin xyz="-0.0975 -0.1175 0.0225" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_v1__2__1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 4" type="continuous">
+  <origin xyz="-0.0975 0.1175 0.0225" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_v1__3__1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Rigid 5" type="fixed">
+  <origin xyz="-0.0675 0.0 0.165" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="lidar_v1_1"/>
+</joint>
+
+</robot>

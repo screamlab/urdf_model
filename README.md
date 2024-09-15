@@ -10,7 +10,8 @@
 ![上銀機械手臂](https://github.com/alianlbj23/urdf_model/blob/main/pic/hiwin%E6%A9%9F%E6%A2%B0%E6%89%8B%E8%87%82.png?raw=true)
 # 需先具備工具
 * https://github.com/syuntoku14/fusion2urdf (將fusion轉成urdf)
-* https://github.com/doctorsrn/xacro2urdf (將xacro轉成urdf) (無法轉換太過複雜的物體，不然有高機率會失敗)
+* https://github.com/doctorsrn/xacro2urdf (將xacro轉成urdf) (無法轉換太過複雜的物體，不然有高機率會失敗)(這個可以用下面的工具取代)
+* https://github.com/screamlab/fusion_xacro2urdf2unity (將 xacro 直接轉換成 urdf，這個不用搬資料夾，會更方便)
 * https://github.com/Unity-Technologies/URDF-Importer (將urdf匯入unity) 
 * fusion360
 * https://www.youtube.com/watch?v=080UAkOeeUM&t=479s (完整製作教學影片)
@@ -25,4 +26,5 @@
 * 零件下面不能有零件
 * join時下面的數字絕對都要是0
 * 若想將零件join時改變join位置，可先改變零件body的角度再去join(改變body不會造成影響)
-* 盡可能的將零件越少越好(可將其他零件的body底下的東西拖拉到其他零件的body做組合，藉此減少零件量)
+* 盡可能的將零件越少越好，可將其他零件的body底下的東西拖拉到其他零件的body做組合，藉此減少零件量，但不要過度合併，不然會造成轉動有問題(如下圖)
+![過度合併](https://github.com/alianlbj23/urdf_model/blob/main/pic/%E9%81%8E%E5%BA%A6%E5%90%88%E4%BD%B5.png?raw=true)

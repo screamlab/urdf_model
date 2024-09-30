@@ -1,0 +1,27 @@
+cat_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  tail_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: tail
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  leftfront_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: leftfront
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  leftback_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: leftback
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  rigtfront_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: rigtfront
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  rightback_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: rightback
+    pid: {p: 100.0, i: 0.01, d: 10.0}

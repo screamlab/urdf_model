@@ -1,0 +1,203 @@
+<?xml version="1.0" ?>
+<robot name="angle_excurate_arm_ver2" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find angle_excurate_arm_ver2_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find angle_excurate_arm_ver2_description)/urdf/angle_excurate_arm_ver2.trans" />
+<xacro:include filename="$(find angle_excurate_arm_ver2_description)/urdf/angle_excurate_arm_ver2.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="2.9893753740438394 1.116432904659099 0.029849440895135016" rpy="0 0 0"/>
+    <mass value="1.6067306789990348"/>
+    <inertia ixx="0.003521" iyy="0.006468" izz="0.008802" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://angle_excurate_arm_ver2_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://angle_excurate_arm_ver2_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="base_link2_v2_1">
+  <inertial>
+    <origin xyz="3.7404378527838844e-07 7.073274099766991e-08 0.04484445545928446" rpy="0 0 0"/>
+    <mass value="0.8724221516717809"/>
+    <inertia ixx="0.000636" iyy="0.000529" izz="0.000308" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-2.989375 -1.116433 -0.075907" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://angle_excurate_arm_ver2_description/meshes/base_link2_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-2.989375 -1.116433 -0.075907" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://angle_excurate_arm_ver2_description/meshes/base_link2_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link3_v1_1">
+  <inertial>
+    <origin xyz="0.08484430230025541 -1.520309589331248e-08 0.10111258233522977" rpy="0 0 0"/>
+    <mass value="1.7894494256516058"/>
+    <inertia ixx="0.00475" iyy="0.007559" izz="0.003484" ixy="-0.0" iyz="-0.0" ixz="-0.003589"/>
+  </inertial>
+  <visual>
+    <origin xyz="-2.989375 -1.116433 -0.146249" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://angle_excurate_arm_ver2_description/meshes/link3_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-2.989375 -1.116433 -0.146249" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://angle_excurate_arm_ver2_description/meshes/link3_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link4_v1_1">
+  <inertial>
+    <origin xyz="0.1482264138500775 -9.6959044348921e-08 0.01783008469499825" rpy="0 0 0"/>
+    <mass value="2.301167222256875"/>
+    <inertia ixx="0.001028" iyy="0.010731" izz="0.010331" ixy="-0.0" iyz="0.0" ixz="-0.000548"/>
+  </inertial>
+  <visual>
+    <origin xyz="-3.127152 -1.116433 -0.310444" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://angle_excurate_arm_ver2_description/meshes/link4_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-3.127152 -1.116433 -0.310444" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://angle_excurate_arm_ver2_description/meshes/link4_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="robot_ver7_link_4_v1_1">
+  <inertial>
+    <origin xyz="0.01789286974697868 -9.695904212847495e-08 0.0031552779596022984" rpy="0 0 0"/>
+    <mass value="0.1836674229836172"/>
+    <inertia ixx="9.9e-05" iyy="0.000103" izz="7.2e-05" ixy="0.0" iyz="0.0" ixz="5e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-3.357435 -1.116433 -0.35257" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://angle_excurate_arm_ver2_description/meshes/robot_ver7_link_4_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-3.357435 -1.116433 -0.35257" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://angle_excurate_arm_ver2_description/meshes/robot_ver7_link_4_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="robot_ver7_grap2_2_v1_1">
+  <inertial>
+    <origin xyz="0.03188502329176801 -0.005587167552119965 0.008275354159303638" rpy="0 0 0"/>
+    <mass value="0.04062678364092949"/>
+    <inertia ixx="4e-06" iyy="2.6e-05" izz="2.5e-05" ixy="-0.0" iyz="-0.0" ixz="-6e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-3.398994 -1.103933 -0.359898" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://angle_excurate_arm_ver2_description/meshes/robot_ver7_grap2_2_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-3.398994 -1.103933 -0.359898" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://angle_excurate_arm_ver2_description/meshes/robot_ver7_grap2_2_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="robot_ver7_grap1_2_v1_1">
+  <inertial>
+    <origin xyz="0.03188502329176801 0.005586973634027714 0.008275354159306136" rpy="0 0 0"/>
+    <mass value="0.040626783640931655"/>
+    <inertia ixx="4e-06" iyy="2.6e-05" izz="2.5e-05" ixy="0.0" iyz="0.0" ixz="-6e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-3.398994 -1.128933 -0.359898" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://angle_excurate_arm_ver2_description/meshes/robot_ver7_grap1_2_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-3.398994 -1.128933 -0.359898" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://angle_excurate_arm_ver2_description/meshes/robot_ver7_grap1_2_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute 1" type="revolute">
+  <origin xyz="2.989375 1.116433 0.075907" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="base_link2_v2_1"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+  <limit upper="3.141593" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 2" type="revolute">
+  <origin xyz="0.0 0.0 0.070342" rpy="0 0 0"/>
+  <parent link="base_link2_v2_1"/>
+  <child link="link3_v1_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+  <limit upper="2.094395" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 3" type="revolute">
+  <origin xyz="0.137777 0.0 0.164195" rpy="0 0 0"/>
+  <parent link="link3_v1_1"/>
+  <child link="link4_v1_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+  <limit upper="2.617994" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 4" type="revolute">
+  <origin xyz="0.230283 0.0 0.042126" rpy="0 0 0"/>
+  <parent link="link4_v1_1"/>
+  <child link="robot_ver7_link_4_v1_1"/>
+  <axis xyz="0.984808 -0.0 0.173648"/>
+  <limit upper="3.141593" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 5" type="revolute">
+  <origin xyz="0.041559 -0.0125 0.007328" rpy="0 0 0"/>
+  <parent link="robot_ver7_link_4_v1_1"/>
+  <child link="robot_ver7_grap2_2_v1_1"/>
+  <axis xyz="0.173648 0.0 -0.984808"/>
+  <limit upper="1.22173" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute 6" type="revolute">
+  <origin xyz="0.041559 0.0125 0.007328" rpy="0 0 0"/>
+  <parent link="robot_ver7_link_4_v1_1"/>
+  <child link="robot_ver7_grap1_2_v1_1"/>
+  <axis xyz="-0.173648 -0.0 0.984808"/>
+  <limit upper="1.22173" lower="0.0" effort="100" velocity="100"/>
+  <mimic joint="Revolute 5" multiplier="-1.0"/>  <!-- multiplier設定為-1.0表示反向模仿 -->
+</joint>
+
+</robot>
